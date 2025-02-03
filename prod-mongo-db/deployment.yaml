@@ -22,7 +22,7 @@ spec:
     spec:
       containers:
       - name: springapp
-        image: dockerhandson/spring-boot-mongo:1
+        image: eagunuworld/jjva-mss-mdb-springboot-app:v26              #dockerhandson/spring-boot-mongo:1
         ports:
         - containerPort: 8080
         env:
