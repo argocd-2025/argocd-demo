@@ -100,7 +100,7 @@ pipeline {
          }
     stage('list all file path') {
              steps{
-                sh 'docker rmi  ${imageVersion}'
+                sh 'ls -lart'
                 }
               }
 
