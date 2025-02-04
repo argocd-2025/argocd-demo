@@ -1,0 +1,23 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: jjva-ns-svc-pod
+  namespace: argocd
+spec:
+  project: default
+
+  source:
+    repoURL: https://github.com/argocd-2025/argocd-demo.git
+    targetRevision: HEAD
+    path: jjva-web-app
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: jjva-ns-svc-pod
+
+  syncPolicy:
+    syncOptions:
+    - CreateNamespace=true
+
+    automated:
+      selfHeal: true
+      prune: true
