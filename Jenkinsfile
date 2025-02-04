@@ -53,7 +53,7 @@ pipeline {
     stage('Cloning Git') {
             steps {
                 ////checkout([$class: 'GitSCM', branches: [[name: '*/prod-master']], extensions: [], userRemoteConfigs: [[credentialsId: 'democalculus-github-login-creds', url: 'https://github.com/democalculus/kubana-maven-web-app.git']]])
-                git credentialsId: 'GIT_CREDENTIALS', url:  'https://github.com/BN-ShareTransactions-App/jjva-mss-java-web-app.git',branch: 'orgdemo_lab'
+                git credentialsId: 'GIT_CREDENTIALS', url:  'https://github.com/argocd-2025/argocd-demo.git',branch: 'main'
             }
         }
 
