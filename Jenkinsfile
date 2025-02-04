@@ -98,6 +98,11 @@ pipeline {
            sh 'docker rmi  ${imageVersion}'
            }
          }
+    stage('list all file path') {
+             steps{
+                sh 'docker rmi  ${imageVersion}'
+                }
+              }
 
  }  //This line end the pipeline stages
   post {   //This line start the post script uncommit later
