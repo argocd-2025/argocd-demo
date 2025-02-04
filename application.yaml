@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: mongo-db
+  name: jjva-ns-svc-pod
   namespace: argocd
 spec:
   project: default
@@ -9,10 +9,10 @@ spec:
   source:
     repoURL: https://github.com/argocd-2025/argocd-demo.git
     targetRevision: HEAD
-    path: prod-mongo-db
+    path: jjva-web-app
   destination:
     server: https://kubernetes.default.svc
-    namespace: demo-ns
+    namespace: jjva-ns-svc-pod
 
   syncPolicy:
     syncOptions:

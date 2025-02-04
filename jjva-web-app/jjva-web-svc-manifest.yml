@@ -1,0 +1,13 @@
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: mss-java-svc
+  namespace: jjva-ns-svc-pod
+spec:
+  type: ClusterIP #LoadBalancer #ClusterIP
+  selector:
+    app: mss-java-svc
+  ports:
+  - port: 80
+    targetPort: 8080
