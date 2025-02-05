@@ -28,7 +28,7 @@ pipeline {
     alertM="prometheus-alertmanager"
     alertName="prometheus-alertmanager"
     graName="grafana"
-    //website url properties
+    //website url properties 
     webSite="http://mdb.eagunu4live.com/java-web-app"
     promeLink="http://prome.eagunu4live.com"
     grafanaURL="http://grafana.eagunu4live.com"
