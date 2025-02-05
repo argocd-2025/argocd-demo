@@ -21,9 +21,7 @@ pipeline {
   environment {
     //Apps environments properties
     myApp="mss-java-app"
-    sonarName="jjva-mss-java-web-report-app"
     dockerName="jjva-mss-java-web-img-app"
-    nexusName="jjva-mss-java-warfile-app"
     promeName="prometheus-server"
     alertM="prometheus-alertmanager"
     alertName="prometheus-alertmanager"
