@@ -89,7 +89,7 @@ pipeline {
 
     stage('Cleaning  up docker Images') {
         steps{
-           sh 'docker rmi  ${imageVersion}'
+           sh 'docker rmi  $(docker images -q)'
            }
          }
     stage('list all file path') {
