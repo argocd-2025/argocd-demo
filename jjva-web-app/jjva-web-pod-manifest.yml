@@ -40,7 +40,7 @@ spec:
               - mpm
       containers:
       - name: mss-java-con
-        image: cicd_latest_version
+        image: eagunuworld/jjva-mss-java-web-img-app12
         ports:
         - containerPort: 8080
         # readinessProbe:
