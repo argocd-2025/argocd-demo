@@ -65,7 +65,7 @@ pipeline {
       stage('Building our image') {
            steps{
                 script {
-                   dockerImage = docker.build registry + ":v$BUILD_NUMBER"
+                   dockerImage = docker.build registry + "$BUILD_NUMBER"
                   }
               }
            }
@@ -86,12 +86,6 @@ pipeline {
             }
            }
          }
-
-    stage('updating image version') {
-          steps {
-                sh "bash jjva-latest-version-update.sh"
-                }
-            }
 
     stage('Cleaning  up docker Images') {
         steps{
